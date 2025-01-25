@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peoples Voice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Peoples Voice</h1>
+    </header>
+    <div class="container">
+        <section class="topics">
+            <h2>Trending Topics</h2>
+            <ul>
+                <li><button class="topic-button" onclick="loadDiscussion('News1')">News1</button></li>
+                <li><button class="topic-button" onclick="loadDiscussion('News2')">News2</button></li>
+                <li><button class="topic-button" onclick="loadDiscussion('News3')">News3</button></li>
+                <li><button class="topic-button" onclick="loadDiscussion('News4')">News4</button></li>
+            </ul>
+        </section>
+
+
+        <section class="discussion" id="discussion-section">
+          <h2 id="current-topic"></h2>
+          <div id="discussion-posts"></div>
+          
+          <!-- Poll Section -->
+          <div id="poll-section">
+            <h3>Vote: Do you support or oppose this topic?</h3>
+            <button class="poll-button" id="support-button" onclick="vote('support')">Support</button>
+            <button class="poll-button" id="against-button" onclick="vote('against')">Against</button>
+            <div id="poll-results">
+              <p>Support: <span id="support-count">0</span></p>
+              <p>Against: <span id="against-count">0</span></p>
+            </div>
+          </div>
+        
+          <h3>Post a Comment</h3>
+          <textarea id="new-comment" placeholder="Share your thoughts..."></textarea>
+          <button onclick="addComment()">Post Comment</button>
+        </section>
+        
+    </div>
+
+    <footer>
+        <p>&copy; Peoples Voice</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
