@@ -7,7 +7,7 @@ Credits :
 => Design and developed: "WebThemez"  http://webthemez.com
 => Photos used in template: **Unsplash** - http://unsplash.com
 => For more free web themes: http://webthemez.com
-=> Framework : http://getbootstrap.com
+=> FrameGrievance : http://getbootstrap.com
 
 Important Note:
 ---------------
@@ -21,7 +21,7 @@ License :
 
 - You are allowed to use all files for both personal and commercial projects.
 
-- If you use/modify the resources in your projects,we’d appreciate a linkback to this site.
+- If you use/modify the resources in your projects,weï¿½d appreciate a linkback to this site.
 
 - You do not have rights to redistribute,resell or offer files from this site to any third party
 
