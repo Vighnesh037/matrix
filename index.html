@@ -3,19 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyGovIndia</title>
+    <title>Grievance Ticket Submission</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="login-container">
-        <h2>Login</h2>
-        <form id="loginForm">
-            <input type="text" id="aadhar" class="input-field" placeholder="Aadhar Number" required><br>
-            <input type="text" id="phone" class="input-field" placeholder="Phone Number" required><br>
-            <input type="text" id="otp" class="input-field" placeholder="OTP" required><br>
-            <button type="submit" class="btn-login"><a href="index1.html"></a>Login</button>
+
+    <div class="container">
+        <h2>Grievance Ticket Submission</h2>
+
+        <form id="grievanceForm">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required pattern="^\d{10}$" placeholder="Enter 10-digit phone number">
+
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="description">Grievance Description</label>
+            <textarea id="description" name="description" required></textarea>
+
+            <button type="submit">Submit Grievance</button>
+            <div class="error" id="errorMessage"></div>
         </form>
     </div>
+
     <script src="script.js"></script>
+
 </body>
 </html>

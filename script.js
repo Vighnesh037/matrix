@@ -1,13 +1,26 @@
-document.getElementById('loginForm').addEventListener('submit', function(e) {
-    e.preventDefault();
+document.getElementById('grievanceForm').addEventListener('submit', function(event) {
+    event.preventDefault();
 
-    const aadhar = document.getElementById('aadhar').value;
-    const phone = document.getElementById('phone').value;
-    const otp = document.getElementById('otp').value;
-
-    if (aadhar==521769012867 && phone==7306922451 && otp==123456) {
-        window.location.href = 'index1.html';
-    } else {
-        alert('Incorrect credintials!');
+    let name = document.getElementById('name').value;
+    let phone = document.getElementById('phone').value;
+    let address = document.getElementById('address').value;
+    let description = document.getElementById('description').value;
+    let errorMessage = document.getElementById('errorMessage');
+    
+    // Basic validation
+    if (!name || !phone || !address || !description) {
+        errorMessage.textContent = 'All fields are required.';
+        return;
     }
+    
+    if (!/^\d{10}$/.test(phone)) {
+        errorMessage.textContent = 'Please enter a valid 10-digit phone number.';
+        return;
+    }
+
+    // Simulate form submission (Replace with your back-end code or API)
+    alert("Grievance submitted successfully!\nName: " + name + "\nPhone: " + phone + "\nAddress: " + address + "\nDescription: " + description);
+
+    // Clear the form
+    document.getElementById('grievanceForm').reset();
 });
