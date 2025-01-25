@@ -8,10 +8,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     flex-direction: column;
   }
-  
+  .home-details{
+    margin-top: 2%;
+    margin-left: -95%;
+  }
   header {
     background-color: #4CAF50;
     color: white;
@@ -19,6 +21,7 @@ body {
     text-align: center;
     width: 100%;
     font-size: 2rem;
+    margin-top: 5%;
   }
   
   .container {
