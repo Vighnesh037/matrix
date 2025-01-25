@@ -98,6 +98,15 @@ header:hover {
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
 }
 
+/* Topic Description */
+#topic-description {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
 /* Textarea */
 textarea {
   width: 100%;
@@ -185,4 +194,26 @@ footer {
   margin-top: 15px;
   font-size: 1.1rem;
   color: #444;
+}
+
+/* Poll Count Styles */
+#poll-section span {
+  font-weight: bold;
+}
+
+/* Disable Button */
+button:disabled, .poll-button:disabled {
+  background: #dcdcdc;
+  cursor: not-allowed;
+}
+
+/* Update support/oppose counts */
+#support-count, #against-count {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+}
+/* Poll Results Section Hidden by Default */
+#poll-results {
+  display: none;
 }

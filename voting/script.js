@@ -61,5 +61,60 @@ document.getElementById('submit-vote-btn').addEventListener('click', function ()
     alert('Please select a candidate to vote.');
   }
 });
+// Handle voter authentication
+document.getElementById('authenticate-btn').addEventListener('click', function () {
+  const voterId = document.getElementById('voter-id').value.trim();
+
+  // Call backend to authenticate
+  fetch('http://localhost:3000/authenticate', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ voterId }),
+  })
+  .then(response => response.json())
+  .then(data => {
+    if (data.message === 'Authenticated successfully.') {
+      document.getElementById('voter-id-section').style.display = 'none';
+      document.getElementById('vote-section').style.display = 'block';
+      populateCandidates();
+      document.getElementById('auth-error').textContent = ''; // Clear any previous errors
+    } else {
+      document.getElementById('auth-error').textContent = data.message;
+    }
+  })
+  .catch(error => {
+    document.getElementById('auth-error').textContent = 'Error: ' + error.message;
+  });
+});
+// Handle vote submission
+document.getElementById('submit-vote-btn').addEventListener('click', function () {
+  const candidateIndex = document.getElementById('candidate-select').value;
+  const voterId = document.getElementById('voter-id').value.trim();
+
+  // Call backend to submit the vote
+  fetch('http://localhost:3000/submit-vote', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ voterId, candidateIndex }),
+  })
+  .then(response => response.json())
+  .then(data => {
+    if (data.message) {
+      document.getElementById('vote-section').style.display = 'none';
+      document.getElementById('confirmation-message').textContent = data.message;
+      document.getElementById('confirmation-message').style.display = 'block';
+    } else {
+      alert('Something went wrong. Please try again.');
+    }
+  })
+  .catch(error => {
+    alert('Error: ' + error.message);
+  });
+});
+
 
   
