@@ -94,17 +94,17 @@ text-align: center;
 line-height: 41px;
 /* border-radius: 10px; */
 }
-#services img{
+#Castyourvote img{
 	width:100%;
 }
-#services .circle{
+#Castyourvote .circle{
 width:120px;
 height: 104px;
 display:inline-block;
 background: transparent;
 overflow:hidden;
 }
-#services .circle:hover {
+#Castyourvote .circle:hover {
 	background:#FFF;	
 	transition: all 0.2s linear 0s;
 	-webkit-transition: all 0.2s linear 0s;
@@ -291,7 +291,7 @@ margin-bottom: 30px;
 }
 .navbar-inverse .navbar-toggle .icon-bar {
 /*background-color: #A43E89;*/
-;
+
 }
 .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
 	background: #38BEE7;
@@ -622,24 +622,24 @@ img, video, iframe, embed, object {
 }
 /* Features
     -------------------------------------------------*/
-#aboutUs {
+#Peoplesopinion {
 	padding-top: 35px;
 	padding-bottom: 25px;
 	overflow: hidden;
 }
-#aboutUs .feature {
+#Peoplesopinion .feature {
 	margin-top: 30px;
 	margin-bottom: 54px;
 }
-#aboutUs .right {
+#Peoplesopinion .right {
 	padding-left: 32px;
 	float: right;
 }
-#aboutUs .left {
+#Peoplesopinion .left {
 	padding-right: 32px;
 	float: left;
 }
-#aboutUs h3 {
+#Peoplesopinion h3 {
 	font: 18px/34px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -648,11 +648,11 @@ img, video, iframe, embed, object {
 .fluid-video-wrapper {
 	margin-top: 18px;
 }
-#aboutUs .left {
+#Peoplesopinion .left {
 	padding-right: 32px;
 	float: left;
 }
-#aboutUs .right {
+#Peoplesopinion .right {
 	float: right;
 }
 .row .area1 {
@@ -661,7 +661,7 @@ img, video, iframe, embed, object {
 .row .area2 {
 	width: 35%;
 }
-/* Services
+/* Cast your vote
     -------------------------------------------------*/
 .grid .text-content {
 	padding-left: 35%;
@@ -765,15 +765,21 @@ img, video, iframe, embed, object {
 	text-align: center;
 	font-size: 18px;
 }
+/*logoemblem------*/
+.logoemblem{
+	width: 9%;
+	margin-left: -27%;
+	
+}
 /* --Portfolio----- */
-#work {
+#Grievance {
 	background: #27AFD3;
 	color: #fff;
 }
-#work h2 {
+#Grievance h2 {
 	color: #fff !important;
 }
-#work p {
+#Grievance p {
 	color: #fff;
 }
 #portfolio {
@@ -1022,7 +1028,7 @@ footer input.form-control{
 .area1 a{
 	margin-bottom:10px;
 }
-#services{
+#Castyourvote{
 padding:35px 0;
 }
 
