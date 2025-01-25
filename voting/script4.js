@@ -1,8 +1,8 @@
 // Sample list of candidates
 const candidates = [
-  { name: 'John Doe', symbol: '🗳️' },
-  { name: 'Jane Smith', symbol: '⚖️' },
-  { name: 'Bob Johnson', symbol: '🌟' },
+  { name: 'Sarfas P', symbol: '🗳️' },
+  { name: 'Sneha S', symbol: '⚖️' },
+  { name: 'Sooryanath G', symbol: '🌟' },
 ];
 
 let hasVoted = false; // Flag to track if the voter has authenticated
