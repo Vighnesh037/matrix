@@ -5,9 +5,9 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
     const phone = document.getElementById('phone').value;
     const otp = document.getElementById('otp').value;
 
-    if (aadhar && phone && otp) {
+    if (aadhar=521769012867 && phone=7306922451 && otp=344565) {
         window.location.href = 'index1.html';
     } else {
-        alert('Please fill all fields!');
+        alert('Incorrect credintials!');
     }
 });
